@@ -295,7 +295,7 @@
             </div>
           </div>
         </div>
-        <div id="comming" class=" tab-pane fade in showing__content__item">
+        <div id="comming" class=" tab-pane fade in active showing__content__item">
           <i class="fa fa-angle-left prev"></i>
           <i class="fa fa-angle-right next"></i>
           <div class=" showing__item container-fluid">
@@ -455,7 +455,9 @@
       </div>
     </div>
   </section>
+
   <section class="calendar container" id="calendar">
+  <section class="calendar container">
     <div class="calendar__content container">
       <div class="row ">
         <div class="col-1">
@@ -2266,7 +2268,6 @@
   <script src="./js/slick.min.js"></script>
   <script>
     $('.showing__item').slick({
-
       nextArrow: $('.next'),
       prevArrow: $('.prev'),
       rows: 2,
@@ -2277,8 +2278,6 @@
 
           breakpoint: 960,
           settings: {
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
             rows: 1,
             slidesToShow: 2,
             slidesToScroll: 2
@@ -2287,8 +2286,6 @@
         {
           breakpoint: 600,
           settings: {
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
             rows: 1,
             slidesToShow: 1,
             slidesToScroll: 1
@@ -2297,8 +2294,6 @@
         {
           breakpoint: 480,
           settings: {
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
             rows: 1,
             slidesToShow: 1,
             slidesToScroll: 1
