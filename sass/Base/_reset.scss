@@ -1,0 +1,32 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    // font-family: SFText-Regular;
+    @include styleText($color-black-0, $fs-0, $fw-normal);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url(SF-UI-Display-Medium.otf);
+    font-family: SFDisplay-Medium;
+}
+@font-face {
+    src: url(SF-UI-Display-Regular.otf);
+    font-family: SFDisplay-Regular;
+}
+@font-face {
+    src: url(SF-UI-Text-Medium.otf);
+    font-family: SFText-Medium;
+}
+@font-face {
+    src: url(SF-UI-Text-Regular.otf);
+    font-family: SFText-Regular;
+}
+@font-face {
+    src: url(Gotham-Ultra.otf);
+    font-family: Gotham-Ultra;
+}

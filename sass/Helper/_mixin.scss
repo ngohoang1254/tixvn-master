@@ -1,0 +1,31 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+    // letter-spacing: 1px;
+}
+@mixin styleButton($bg-color, $border, $radius, $pd-y, $pd-x) {
+    background-color: $bg-color;
+    border: 1px solid $border;
+    border-radius: $radius;
+    padding: $pd-y $pd-x;
+}
+@mixin styleHover($bg-color, $color, $border-color) {
+    background-color: $bg-color;
+    color: $color;
+    border-color: $border-color;
+}
+@mixin responsive($screen) {
+    // Kiểm tra screen trong breakpoint
+    @if (map-has-key($map: $breakpoints, $key: $screen)) {
+        $value: map-get(
+            $map: $breakpoints,
+            $key: $screen,
+        );
+        @media screen and(max-width : $value) {
+            @content;
+        }
+    } @else {
+        @warn 'The value is invalid';
+    }
+}

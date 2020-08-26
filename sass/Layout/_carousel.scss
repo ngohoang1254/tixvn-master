@@ -1,0 +1,70 @@
+.carousel__movie {
+    position: relative;
+    .carousel-indicators {
+        margin-bottom: 50px;
+        .active {
+            background-color: #fb4226;
+        }
+        li {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #d8d8d8;
+        }
+    }
+    .carousel__content {
+        position: relative;
+    }
+    .carousel__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        a {
+            text-decoration: none;
+            i {
+                font-size: 30px;
+                height: 80px;
+                width: 80px;
+                display: block;
+                color: white;
+                border: solid 2px white;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 80px;
+                opacity: 0;
+                transition: all 0.5s;
+            }
+        }
+    }
+    .carousel__calendar {
+        position: absolute;
+        max-width: 940px;
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        display: flex;
+        align-items: center;
+        .container-fluid {
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        select {
+            border: none;
+            border-right: 1px solid grey;
+        }
+        button {
+            margin-left: 30px;
+        }
+    }
+}
+.carousel__movie:hover .carousel__text a i {
+    opacity: 1;
+}
+@media only screen and (max-width: 1000px) {
+    .carousel__movie .carousel__calendar {
+        display: none;
+    }
+}

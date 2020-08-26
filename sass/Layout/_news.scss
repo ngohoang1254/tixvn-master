@@ -1,0 +1,229 @@
+// NEWS
+.news {
+    // padding: 80px 0;
+    width: 940px;
+    margin: 0 auto;
+    .news__content {
+        background-image: url("../../img/back-news.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 120px;
+
+        .nav-tabs {
+            border-bottom: none;
+            display: flex;
+            justify-content: center;
+
+            .nav-item {
+                margin-right: 20px;
+
+                .nav-link {
+                    border: none;
+                    @include styleText($color-black-0, $fs-2, $fw-bold-4);
+                    line-height: 24px;
+                    height: 24px;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        font-size: $fs-3;
+                    }
+                }
+
+                .nav-link.active {
+                    @include styleText($color-orange-0, $fs-3, $fw-bold-4);
+                    line-height: 24px;
+                    height: 24px;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        #newsTabContent {
+            padding-top: 20px;
+
+            .news__item {
+                .news__img {
+                    img {
+                        border-radius: 4px;
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .news__title {
+                    text-decoration: none;
+                    @include styleText($color-black-0, $fs-0 + 1, $fw-bold-4);
+                    line-height: 20px;
+                    margin-bottom: 5px;
+                    display: block;
+                    transition: 0.2s;
+
+                    &:hover {
+                        color: $color-orange-0;
+                    }
+                }
+
+                P {
+                    @include styleText($color-gray-0, $fs-1, $fw-normal);
+                    text-align: justify;
+                    line-height: 19px;
+                    height: 55px;
+                    margin-bottom: 15px;
+                    padding: 0 5px 0 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .news__luotTT {
+                    display: flex;
+
+                    .news__icon {
+                        margin-right: 25px;
+                        cursor: pointer;
+                        display: inline-table;
+                        height: 20px;
+
+                        i {
+                            margin-right: 10px;
+                            margin-top: 2px;
+                            @include styleText($color-gray-7, $fs-2 - 2, $fw-normal);
+                            transition: all 0.2s;
+                        }
+                        &:hover i {
+                            transform: scale(1.2);
+                        }
+
+                        span {
+                            @include styleText($color-gray-7, $fs-1 - 1, $fw-normal);
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+                .news__title-small {
+                    height: 42px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .news_wrapSeeMore {
+                text-align: center;
+                padding: 30px;
+                .news__seeMore {
+                    @include styleButton($color-transparent, $color-gray-8, $border-radius-0, $pd-0 + 2, $pd-3);
+                    @include styleText($color-gray-8, $fs-0 - 1, $fw-normal);
+                    text-transform: uppercase;
+                    text-align: center;
+                    transition: all 0.2s;
+                    &:hover {
+                        @include styleHover($color-orange-0, $color-white-0, $color-orange-0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 1200px
+// @include responsive("extra-large") {
+//     .header__left {
+//         .formSearch {
+//             flex-grow: 2;
+//         }
+//     }
+
+//     .header__right {
+//         .ude-menu {
+//             display: none;
+//         }
+//     }
+// }
+
+// // 768px
+// @include responsive("medium") {
+//     .header__left {
+//         .categories,
+//         .formSearch {
+//             display: none;
+//         }
+//     }
+
+//     .header__right {
+//         .ude-menu,
+//         .ude-btnGroup {
+//             display: none;
+//         }
+//     }
+// }
+
+// 576px
+@include responsive("small") {
+    .news {
+        .news__content {
+            .nav-tabs {
+                .nav-item {
+                    margin-right: 5px;
+                    .nav-link {
+                        @include styleText($color-black-0, $fs-1, $fw-bold-4);
+                        line-height: 15px;
+                        height: 15px;
+                        padding: 5px 10px;
+                        transition: all 0.2s;
+                        &:hover {
+                            font-size: $fs-0;
+                        }
+                    }
+
+                    .nav-link.active {
+                        @include styleText($color-orange-0, $fs-0, $fw-bold-4);
+                        line-height: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+            #newsTabContent {
+                // padding-top: 20px;
+
+                .news__item {
+                    // .news__img {
+                    //     img {
+                    //         border-radius: 4px;
+                    //         width: 100%;
+                    //         margin-bottom: 10px;
+                    //     }
+                    // }
+
+                    // .news__title {
+                    //     text-decoration: none;
+                    //     @include styleText($color-black-0, $fs-0 + 1, $fw-bold-4);
+                    //     line-height: 20px;
+                    //     margin-bottom: 5px;
+                    //     display: block;
+                    //     transition: 0.2s;
+
+                    //     &:hover {
+                    //         color: $color-orange-0;
+                    //     }
+                    // }
+
+                    // P {
+                    //     @include styleText($color-gray-0, $fs-1, $fw-normal);
+                    //     text-align: justify;
+                    //     line-height: 19px;
+                    //     height: 55px;
+                    //     margin-bottom: 15px;
+                    //     padding: 0 5px 0 0;
+                    //     overflow: hidden;
+                    //     text-overflow: ellipsis;
+                    // }
+
+                    .news__luotTT {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

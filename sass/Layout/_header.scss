@@ -1,0 +1,119 @@
+.navbar {
+    .navbar-brand {
+        img {
+            width: 50px;
+        }
+    }
+}
+header {
+    .header__center {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+        ul {
+            li {
+                margin-right: 20px;
+                font-weight: $fw-bold;
+                letter-spacing: 0px;
+            }
+        }
+    }
+    .header__right {
+        position: absolute;
+        right: 30px;
+        span {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                height : 20px;
+                border-radius : 30px;
+                margin-right : 10px;
+            }
+            p {
+                // color : black;
+                // border-right : 1px solid black;
+                // font-weight : $fw-bold;
+                // letter-spacing : 0px;
+                // margin-right : 10px;
+                // white-space: nowrap;
+                color: #9b9b9b;
+                font-size : 13px;
+                border-right: 1px solid #9b9b9b;
+                margin-right: 10px;
+                margin-top : 10px;
+                padding-right : 10px;
+                font-weight: $fw-bold-0;
+                cursor:pointer;
+            }
+            i {
+                color: #9b9b9b;
+                font-size: 13px;
+       
+
+            }
+            select {
+                width: 120px;
+                border: none;
+                font-size: 13px;
+                font-weight: $fw-bold-0;
+                color : #9b9b9b;
+            }
+            .form-control:focus{
+                box-shadow: none!important;
+            }
+        }
+    }
+}
+
+.header__left {
+    display: flex;
+    @include styleText($color-black-light, $fs-1, $fw-normal);
+
+    .navbar-brand {
+        img {
+            width: 110px;
+        }
+    }
+    .formSearch {
+        // Độ ưu tiên chiếm khoảng trống còn dư từ 0 -> 1
+        flex-grow: 0.8;
+    }
+    .categories {
+        margin-right: 5px;
+        // Đi cùng flex. align-item là canh các thằng con
+        // align-self là canh với chính nó
+        align-self: center;
+    }
+}
+
+@include responsive("extra-large") {
+    .header__right {
+        .navbar-nav {
+            .ude-menu {
+                display: none;
+            }
+        }
+    }
+    .header__left {
+        .formSearch {
+            flex-grow: 1;
+        }
+    }
+}
+@include responsive("medium") {
+    .header__right {
+        button {
+            display: none;
+        }
+    }
+    .header__left {
+        .formSearch {
+            display: none;
+        }
+        .categories {
+            display: none;
+        }
+    }
+}

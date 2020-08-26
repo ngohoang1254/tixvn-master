@@ -1,0 +1,30 @@
+Chia nhỏ css ra
+Base{
+    reset:
+    customize:đè code thư viện cho toàn bộ website
+}
+Helper{
+    variable: Khai báo biến
+    Extend
+    Mixin
+}
+Component{
+    button, form, input : Thành phần nhỏ nhưng dùng nhiều
+    trong website
+}
+layout{
+    Header
+    Fotter
+}
+Page{
+    Các đường dẫn tới các trang khác
+}
+Vendor{
+    Chứa code thư viện
+}
+Theme{
+
+}
+Main{
+    Chứa các đường dẫn 
+}
