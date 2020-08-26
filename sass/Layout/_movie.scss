@@ -1,8 +1,8 @@
 .movie__app {
     padding: 120px 0px 80px 0;
     background: url(../../img/backapp.jpg);
-    background-size: contain;
-    p {
+    background-size: cover;
+        p {
         color: white;
         font-size: medium;
     }
@@ -61,3 +61,9 @@
         }
     }
 }
+@media only screen and (max-width: 992px) {
+    .movie__app{
+        text-align : center;
+    }
+  }
+  
