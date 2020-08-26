@@ -1981,14 +1981,35 @@
       <div class="mainMaxWidth">
         <div class="row">
           <div class="col-6">
-            <p>Ứng dụng tiện lợi dành cho</p>
-            <p>người yêu điện ảnh</p>
+            <p class="textLeft">Ứng dụng tiện lợi dành cho</p>
+            <p class="textLeft">người yêu điện ảnh</p>
             <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.
 
             </p>
-            <p>App miễn phí - Tải về ngay!</p>
-            <p>TIX có hai phiên bản Android & IOS
+            <button class="buttonLeft">App miễn phí - Tải về ngay!</button>
+            <p class="textAppUnder">TIX có hai phiên bản <a href="#">Android</a> & <a href="#">IOS</a>
             </p>
+          </div>
+          <div class="col-6">
+            <div class="right-content">
+              <img class="img-fluid phone__img" src="../../img/mobile.png" alt="">
+              <div class="movie__phone">
+                <div class="item">
+                  <img src="../../img/slide7.jpg" alt="">
+                </div>
+                <div class="item">
+
+                  <img src="../../img/slide8.jpg" alt="">
+                </div>
+                <div class="item">
+
+                  <img src="../../img/slide9.jpg" alt="">
+                </div>
+                <div class="item">
+                  <img src="../../img/slide10.jpg" alt="">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2098,12 +2119,12 @@
         <div class="col-lg-2">
           <div class="footer__mobileApp">
             <p>MOBILE APP</p>
-            <span>  
+            <span>
               <a href="#">
                 <img src="./img/apple-logo.png" alt="">
               </a>
             </span>
-            <span>  
+            <span>
               <a href="#">
                 <img src="./img/android-logo.png" alt="">
               </a>
@@ -2127,7 +2148,7 @@
         </div>
       </div>
 
-      <hr class="breakLine"/>
+      <hr class="breakLine" />
 
       <div class="row">
         <div class="col-lg-2">
@@ -2140,7 +2161,8 @@
             <h4>TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h4>
             <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
             <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783, <br>
-              đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
+              đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+            </p>
             <p>Số Điện Thoại (Hotline): 1900 545 436</p>
             <p>Email: <a href="mailto:support@tix.vn">support@tix.vn</a></p>
           </div>
@@ -2171,7 +2193,14 @@
       slidesToScroll: 4
     });
   </script>
-
+  <script>
+    $('.movie__phone').slick({
+      nextArrow: $('.next'),
+      prevArrow: $('.prev'),
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+  </script>
 </body>
 
 </html>

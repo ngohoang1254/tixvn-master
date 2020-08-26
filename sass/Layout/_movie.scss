@@ -1,12 +1,63 @@
-.movie__app{
-    padding : 120px 0px 80px 0;
-    background : url(../../img/backapp.jpg);
-    background-size : contain;
-    p{
-        color : white;
+.movie__app {
+    padding: 120px 0px 80px 0;
+    background: url(../../img/backapp.jpg);
+    background-size: contain;
+    p {
+        color: white;
+        font-size: medium;
     }
-    .mainMaxWidth{
-        width : 940px;
-        margin : auto;
+    .textLeft {
+        color: white;
+        font-weight: 700;
+        font-size: xx-large;
+    }
+
+    .mainMaxWidth {
+        width: 940px;
+        margin: auto;
+    }
+    .buttonLeft {
+        background-color: #fb4226;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: medium;
+        font-weight: 700;
+        border: none;
+        border-radius: 4px;
+    }
+    .textAppUnder {
+        padding-top: 10px;
+        a {
+            text-decoration: none;
+            color: white;
+            border-bottom: 1px solid white;
+        }
+    }
+    .right-content {
+        position: relative;
+        .phone__img {
+            padding: 0 28%;
+            width: 100%;
+            display: block;
+        }
+        .movie__phone {
+            position: absolute;
+            width: 100%;
+            padding: 1.5% 29.3% 0 29.3%;
+            top: 0;
+            left: 0;
+            height: 420px;
+
+            .item {
+                width: 195px;
+                top: 0;
+                left: 0;
+                img {
+                    display: block;
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+        }
     }
 }

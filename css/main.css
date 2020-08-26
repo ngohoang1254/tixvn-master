@@ -953,11 +953,69 @@ footer .footer__content .footer__bctLogo a img {
 
 .movie__app p {
   color: white;
+  font-size: medium;
+}
+
+.movie__app .textLeft {
+  color: white;
+  font-weight: 700;
+  font-size: xx-large;
 }
 
 .movie__app .mainMaxWidth {
   width: 940px;
   margin: auto;
+}
+
+.movie__app .buttonLeft {
+  background-color: #fb4226;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: medium;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+}
+
+.movie__app .textAppUnder {
+  padding-top: 10px;
+}
+
+.movie__app .textAppUnder a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.movie__app .right-content {
+  position: relative;
+}
+
+.movie__app .right-content .phone__img {
+  padding: 0 28%;
+  width: 100%;
+  display: block;
+}
+
+.movie__app .right-content .movie__phone {
+  position: absolute;
+  width: 100%;
+  padding: 1.5% 29.3% 0 29.3%;
+  top: 0;
+  left: 0;
+  height: 420px;
+}
+
+.movie__app .right-content .movie__phone .item {
+  width: 195px;
+  top: 0;
+  left: 0;
+}
+
+.movie__app .right-content .movie__phone .item img {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
 }
 
 footer {
