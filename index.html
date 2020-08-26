@@ -308,7 +308,7 @@
             </div>
           </div>
         </div>
-        <div id="comming" class=" tab-pane fade in showing__content__item">
+        <div id="comming" class=" tab-pane fade in active showing__content__item">
           <i class="fa fa-angle-left prev"></i>
           <i class="fa fa-angle-right next"></i>
           <div class=" showing__item container-fluid">
@@ -476,6 +476,8 @@
       </div>
     </div>
   </section>
+
+
   <section class="calendar container">
     <div class="calendar__content container">
       <div class="row ">
@@ -2357,7 +2359,6 @@
   <script src="./js/slick.min.js"></script>
   <script>
     $('.showing__item').slick({
-
       nextArrow: $('.next'),
       prevArrow: $('.prev'),
       rows: 2,
@@ -2368,8 +2369,6 @@
 
           breakpoint: 960,
           settings: {
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
             rows: 1,
             slidesToShow: 2,
             slidesToScroll: 2
@@ -2378,8 +2377,6 @@
         {
           breakpoint: 600,
           settings: {
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
             rows: 1,
             slidesToShow: 1,
             slidesToScroll: 1
@@ -2388,8 +2385,6 @@
         {
           breakpoint: 480,
           settings: {
-            nextArrow: $('.next'),
-            prevArrow: $('.prev'),
             rows: 1,
             slidesToShow: 1,
             slidesToScroll: 1
@@ -2409,12 +2404,7 @@
       autoplaySpeed: 2000,
     });
   </script>
-  <script>
-    $(".nav .nav-tabs").on("click", function () {
-      $(".nav").find(".active").removeClass("active");
-      $(this).addClass("active");
-    });
-  </script>
+
 </body>
 
 </html>
